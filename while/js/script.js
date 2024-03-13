@@ -8,3 +8,12 @@
 const myLi = document.querySelector('#lista-spesa');
 // controllo quello che c'è all'interno dell'array
  const list = ['Latte','Cacao','Insalata','Carote','Pomodori','Piatti pronti'];
+ // con l'utilizzo di un ciclo for prendo gli elementi contenuti dentro l'array e li stampo all'interno del DOM.
+ let i = 0;
+ while (i < list.length) {
+    const product = list[i];
+    i++;
+    myLi.innerHTML += `<li>${product}</li>`;
+ }
+
+
